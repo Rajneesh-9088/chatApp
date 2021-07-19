@@ -32,6 +32,6 @@ io.on('connection', (socket) => {
 
 
 
-server.listen(3003,()=> {
+server.listen( process.env.PORT || 3003,()=> {
      console.log("server running at port 3003");
 })
